@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/app_background"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <!-- App Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hera's Meal Helper"
+        android:textSize="28sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Time Input -->
+    <EditText
+        android:id="@+id/et_time_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_time_e_g_morning_afternoon"
+        android:inputType="text"
+        android:padding="16dp"
+        android:background="@drawable/input_background"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"/>
+
+    <!-- Buttons Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:weightSum="2">
+
+        <!-- Suggest Button -->
+        <Button
+            android:id="@+id/btn_suggest"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Suggest Meal"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/teal_700"
+            android:textColor="@color/black"/>
+
+        <!-- Reset Button -->
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Reset"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <!-- Suggestion Output -->
+    <TextView
+        android:id="@+id/tv_suggestion_output"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:padding="24dp"
+        android:background="@drawable/suggestion_background"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:lineSpacingMultiplier="1.2"/>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="what_should_hera_eat">What should Hera eat?</string>
+    <string name="enter_time_of_day_e_g_morning_afternoon">Enter time of day (e.g., Morning, Afternoon)</string>
+    <string name="suggest_meal">Suggest Meal</string>
+    <string name="reset">Reset</string>
+    <string name="show">Show</string>
+    <string name="enter_time_e_g_morning_afternoon">Enter time (e.g. Morning, Afternoon)</string>
+</resources>
